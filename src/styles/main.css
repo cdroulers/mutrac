@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+
+    background: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+#main, #main img {
+  width: 100%;
+  height: 100%;
+}
+
+.page {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* align items in Main Axis */
+  align-items: stretch; /* align items in Cross Axis */
+  align-content: stretch; /* Extra space in Cross Axis */
+  margin: 5%;
+}
+
+.part {
+  display: flex;
+  flex-basis: calc(50% - 40px);
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.part.top.left {
+  border-right: 5px solid #fff;
+  border-bottom: 5px solid #fff;
+}
+
+.part.top.right {
+  border-left: 5px solid #fff;
+  border-bottom: 5px solid #fff;
+}
+
+.part.bottom.left {
+  border-right: 5px solid #fff;
+  border-top: 5px solid #fff;
+}
+
+.part.bottom.right {
+  border-left: 5px solid #fff;
+  border-top: 5px solid #fff;
+}
+
+.page h2 {
+  font-size: 500%;
+  text-align: left;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.page .value {
+  font-size: 1500%;
+}

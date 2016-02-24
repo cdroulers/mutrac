@@ -1,60 +1,10 @@
 {
   "version": "0.1.0",
-  "command": "npm",
+  "command": "tsc",
   "isShellCommand": true,
   "args": [
-    ""
+    "-p",
+    "src"
   ],
-  "tasks": [
-    {
-      "taskName": "build",
-      "args": [
-      ],
-      "isBuildCommand": true,
-      "isWatching": false,
-      "problemMatcher": [
-        {
-          "owner": "tsc",
-          "fileLocation": [
-            "relative",
-            "${workspaceRoot}"
-          ],
-          "pattern": [
-            {
-              "regexp": "(\\w+) in (.*)",
-              "file": 2,
-              "severity": 1
-            },
-            {
-              "regexp": "\\((\\d+),(\\d+)\\): (.*)",
-              "line": 1,
-              "column": 2,
-              "message": 3
-            }
-          ]
-        },
-        {
-          "owner": "tslint",
-          "fileLocation": [
-            "relative",
-            "${workspaceRoot}"
-          ],
-          "pattern": [
-            {
-              "regexp": "(\\w+) in (.*)",
-              "file": 2,
-              "severity": 1
-            },
-            {
-              "regexp": "\\[(\\d+),\\s+(\\d+)\\]: (.*)",
-              "line": 1,
-              "column": 2,
-              "message": 3,
-              "loop": true
-            }
-          ]
-        }
-      ]
-    }
-  ]
+  "problemMatcher": "$tsc"
 }

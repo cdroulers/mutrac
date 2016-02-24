@@ -4,11 +4,47 @@
 <head>
   <title>μtrac display</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta charset="utf-8" />
+
+  <link rel="stylesheet" href="styles/main.css" />
 </head>
 
 <body>
   <div id="root">
+    <div class="" id="main">
+      <img src="img/mutrac-logo-full.jpg" alt="logo" />
+    </div>
+
+    <div class="page" id="page1">
+      <div class="part top left" id="velocity">
+        <h2>Velocity <span style="float: right">(km/h)</small></h2>
+        <div class="value">25.4</div>
+      </div>
+      <div class="part bottom left" id="cvt">
+        <h2>CVT Ratio</h2>
+        <div class="value">3.26</div>
+      </div>
+      <div class="part top right" id="slip">
+        <h2>Slip ratio</h2>
+        <div class="value">15 %</div>
+      </div>
+      <div class="part bottom right" id="rpm">
+        <h2>Engine RPM</h2>
+        <div class="value">1550</div>
+      </div>
+    </div>
+
+    <div class="page" id="page2">
+    </div>
+
+    <div class="page" id="page3">
+    </div>
+
+    <div class="page" id="page4">
+    </div>
   </div>
+
+  <script src="bundle.js"></script>
 </body>
 
 </html>
