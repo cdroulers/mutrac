@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "sourceMap": true,
+    "jsx": "react",
+    "outFile": "bundle.js"
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

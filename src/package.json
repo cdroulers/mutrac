@@ -1,0 +1,23 @@
+{
+  "name": "mutrac",
+  "version": "1.0.0",
+  "description": "μtrac display",
+  "main": "server.js",
+  "scripts": {
+    "build": "tsc -p src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/cdroulers/mutrac.git"
+  },
+  "author": "Christian Droulers <droulers.christian@gmail.com>",
+  "license": "LGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/cdroulers/mutrac/issues"
+  },
+  "homepage": "https://github.com/cdroulers/mutrac#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
