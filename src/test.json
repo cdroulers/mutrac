@@ -1,0 +1,18 @@
+{
+    "vel": 15.7,
+    "slip": 15,
+    "cvt": 3.4,
+    "rpm": 3601,
+    "throttle": 100,
+    "load": 87,
+    "temp": 80,
+    "oil": 40,
+    "susp": 100,
+    "ballast": "Off",
+    "lbrake": 0,
+    "rbrake": 0,
+    "hours": 10.5,
+    "bat": 12.6,
+    "user": "guest",
+    "lock": false
+}
