@@ -1,12 +1,12 @@
 module app {
-  interface IData {
+  export interface IData {
     vel: number;
     slip: number;
     cvt: number;
     rpm: number; // (0-4000)
     throttle: number; // (0-100)
     load: number; // (0-100)
-    temp: number; // (0-100)
+    temp: number;
     oil: number; // (0-100)
     susp: number; // (0-100)
     ballast: string; // (Forward / Backward / Off)
