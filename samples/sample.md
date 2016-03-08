@@ -24,16 +24,11 @@ Format is the following:
 # Color coding
 
 ```
-Slip ratio: 0-19% green, 20-39% orange, 40-100% red
-Engine loading:0-79% green, 80-89% Orange,90-100% red
-Engine temp:
-Oil pressure:
-Brake state: 0% white, else orange
-Battery voltage: 0-10.9 orange, 11.0-12.9 green, 13.0-15.0 orange
-Differential: ON orange, OFF white
-
-Oil pressure:0-50 psi green, 51-100 psi red.
-Oil temperature: 0-100 C green, 101-140C yellow, 141 and above red
-I hope this helps.
-for voltage, 15.1 and above is red
+Slip ratio:     0-19% green, 20-39% orange, 40-100% red
+Engine loading: 0-79% green, 80-89% Orange,90-100% red
+Engine temp:    0-100 C green, 101-140C yellow, 141 and above red
+Oil pressure:   0-50 psi green, 51-100 psi red.
+Brake state:    0% white, else orange
+Battery voltage: 0-10.9 orange, 11.0-12.9 green, 13.0-15.0 orange, 15.1 and above is red
+Differential:   ON orange, OFF white
 ```
