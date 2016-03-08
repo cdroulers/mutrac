@@ -40,7 +40,7 @@ html, body {
 }
 
 .parts {
-  flex: 0.85;
+  flex: 0.8;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -50,7 +50,7 @@ html, body {
   flex: 0.5;
   display: flex;
   width: 50%;
-  flex-basis: calc(50% - 5px);
+  flex-basis: calc(50% - 0.5vw);
   justify-content: center;
   flex-direction: column;
   text-align: center;
@@ -69,27 +69,27 @@ html, body {
 }
 
 .part.top.left {
-  border-right: 5px solid #fff;
-  border-bottom: 5px solid #fff;
+  border-right: 0.5vw solid #fff;
+  border-bottom: 0.5vw solid #fff;
 }
 
 .part.top.right {
-  border-left: 5px solid #fff;
-  border-bottom: 5px solid #fff;
+  border-left: 0.5vw solid #fff;
+  border-bottom: 0.5vw solid #fff;
 }
 
 .part.bottom.left {
-  border-right: 5px solid #fff;
-  border-top: 5px solid #fff;
+  border-right: 0.5vw solid #fff;
+  border-top: 0.5vw solid #fff;
 }
 
 .part.bottom.right {
-  border-left: 5px solid #fff;
-  border-top: 5px solid #fff;
+  border-left: 0.5vw solid #fff;
+  border-top: 0.5vw solid #fff;
 }
 
 .page h2 {
-  font-size: 4vw;
+  font-size: 3vw;
   text-align: left;
   padding-left: 10%;
   padding-right: 10%;
@@ -121,7 +121,7 @@ nav ul > li > a {
   border: 5px solid #fff;
   display: inline-flex;
   width: 100%;
-  height: 100px;
+  height: 6vw;
   align-items: center;
   justify-content: center;
 }
