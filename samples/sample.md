@@ -18,6 +18,9 @@ Format is the following:
     "bat" : unsigned float,
     "user" : String,
     "lock" : boolean,
+    "gear" : number,
+    "belt_slip" : number,
+    "trans_temp" : number
 }
 ```
 

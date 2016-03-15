@@ -1,11 +1,11 @@
 {
-    "vel": 15.6,
+    "vel": 15.7,
     "slip": 15,
     "cvt": 3.4,
-    "rpm": 3600,
+    "rpm": 3601,
     "throttle": 100,
     "load": 87,
-    "temp": 80,
+    "eng_temp": 80,
     "oil": 40,
     "susp": 100,
     "ballast": "Off",
@@ -14,5 +14,8 @@
     "hours": 10.5,
     "bat": 12.6,
     "user": "guest",
-    "lock": false
+    "lock": false,
+    "gear": 1,
+    "belt_slip": -5.0,
+    "trans_temp": 30
 }

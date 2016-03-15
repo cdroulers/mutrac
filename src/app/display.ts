@@ -9,7 +9,8 @@ module app {
         Warning: { Min: 20, Max: 40 },
         Bad: { Min: 40, Max: 100 }
       });
-    SetNumber("#cvt", data.cvt);
+    SetNumber("#cvt_ratio", data.cvt_ratio);
+    SetPercentage("#cvt_pct", data.cvt_pct);
     SetNumber("#rpm", data.rpm, 0);
 
     SetPercentage("#throttle", data.throttle);
@@ -23,7 +24,7 @@ module app {
       });
     SetDegrees(
       "#engine-temperature",
-      data.temp,
+      data.eng_temp,
       {
         Good: { Min: 0, Max: 100 },
         Warning: { Min: 100, Max: 140 },
@@ -59,6 +60,10 @@ module app {
     SetBatteryVoltage("#battery-voltage", data.bat);
     SetValue("#rfid-user", data.user);
     SetValue("#differential", data.lock ? "ON" : "OFF", data.lock ? "warning" : "");
+
+    SetNumber("#gear", data.gear, 0);
+    SetPercentage("#belt_slip", data.belt_slip);
+    SetDegrees("#trans_temp", data.trans_temp);
   }
 
   interface Interval {

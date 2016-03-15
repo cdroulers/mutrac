@@ -2,11 +2,12 @@ module app {
   export interface IData {
     vel: number;
     slip: number;
-    cvt: number;
+    cvt_ratio: number;
+    cvt_pct: number;
     rpm: number; // (0-4000)
     throttle: number; // (0-100)
     load: number; // (0-100)
-    temp: number;
+    eng_temp: number;
     oil: number; // (0-100)
     susp: number; // (0-100)
     ballast: string; // (Forward / Backward / Off)
@@ -16,6 +17,9 @@ module app {
     bat: number;
     user: string;
     lock: boolean;
+    gear: number;
+    belt_slip: number;
+    trans_temp: number;
   }
 
   export function Fetch() {
