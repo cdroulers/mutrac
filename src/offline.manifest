@@ -1,0 +1,15 @@
+CACHE MANIFEST
+
+CACHE:
+index.html
+bundle.js
+styles/main.css
+img/mutrac-logo-full.png
+img/engine_icon.png
+img/gauge_icon.png
+img/gear_icon.png
+img/powertrain_icon.png
+img/user_icon.png
+
+NETWORK:
+test.json
