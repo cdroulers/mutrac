@@ -16,8 +16,8 @@
     "url": "https://github.com/cdroulers/mutrac/issues"
   },
   "homepage": "https://github.com/cdroulers/mutrac#readme",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
+    "typescript": "^1.8.10"
   }
 }
