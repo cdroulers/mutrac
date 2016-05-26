@@ -22,35 +22,50 @@ module app {
     trans_temp: number;
   }
 
+  function getParameterByName(name: string, url?: string) {
+    if (!url) url = window.location.search;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    const results = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)").exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+  }
+
   export function Fetch() {
-    var request = new XMLHttpRequest();
+    const fileName = getParameterByName("file") || "test.json";
+    console.log(`Starting fetch for ${fileName}`);
 
-    request.addEventListener("load", TransferComplete);
-    request.addEventListener("error", TransferFailed);
-    request.addEventListener("abort", TransferCanceled);
+    FetchInternal(fileName);
+  }
 
-    request.open("GET", "test.json");
+  export function FetchInternal(fileName: string) {
+    const request = new XMLHttpRequest();
+
+    request.addEventListener("load", e => TransferComplete(e, fileName));
+    request.addEventListener("error", e => TransferFailed(e, fileName));
+    request.addEventListener("abort", e => TransferCanceled(e, fileName));
+
+    request.open("GET", fileName);
     request.send();
   }
 
-  function TransferComplete(evt) {
-    var text = this.responseText;
-    var result: IData = JSON.parse(text);
+  function TransferComplete(evt, fileName: string) {
+    const result: IData = JSON.parse(evt.target.responseText);
     app.DisplayData(result);
 
     setTimeout(() => {
-      app.Fetch();
+      app.FetchInternal(fileName);
     }, 500);
   }
 
-  function TransferFailed(evt) {
-    console.log("An error occurred while transferring the file.", evt);
+  function TransferFailed(evt, fileName: string) {
+    console.error("An error occurred while transferring the file.", evt);
     setTimeout(() => {
-      app.Fetch();
+      app.FetchInternal(fileName);
     }, 2500);
   }
 
-  function TransferCanceled(evt) {
-    console.log("The transfer has been canceled by the user.", evt);
+  function TransferCanceled(evt, fileName: string) {
+    console.error("The transfer has been canceled by the user.", evt);
   }
 }
